@@ -20,12 +20,15 @@
     $('body').scrollspy({
         target: '.navbar-fixed-top',
         offset: 51
-    })
+    });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
+    for( var i = 0 ; i < document.querySelectorAll('.navbar-collapse ul li a').length; i++ )
+    {
+        document.querySelectorAll('.navbar-collapse ul li a')[i].addEventListener('click', function(){
+            document.querySelectorAll('.navbar-toggle')[0].click();
+        });
+    }
 
     // Fit Text Plugin for Main Header
     $("h1").fitText(
