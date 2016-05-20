@@ -489,8 +489,8 @@ body {
     width: 0;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: type-1 4.4s steps(22, end) 4s, blink-caret .5s step-end 4s 7 alternate;
-    animation: type-1 4.4s steps(22, end) 4s, blink-caret .5s step-end 4s 7 alternate;
+    -webkit-animation: type-1 4.4s steps(22, end) 4.5s, blink-caret .5s step-end 4s 12 alternate;
+    animation: type-1 4.4s steps(22, end) 4.5s, blink-caret .5s step-end 4s 12 alternate;
     -webkit-animation-fill-mode: forwards;
     /* Chrome, Safari, Opera */
     animation-fill-mode: forwards;
