@@ -479,8 +479,8 @@ body {
     width: 14ch;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: type 2.6s steps(13, end) , blink-caret .5s step-end 8 alternate;
-    animation: type 2.6s steps(13, end) , blink-caret .5s step-end 8 alternate;
+    -webkit-animation: type 2.6s steps(14, end), blink-caret .5s step-end 8 alternate;
+    animation: type 2.6s steps(14, end) , blink-caret .5s step-end 8 alternate;
 }
 
 .typing-1st {
