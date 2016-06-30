@@ -1,0 +1,24 @@
+{
+  "name": "resume",
+  "authors": [
+    "Zheng Ma <zane.mark19@gmail.com>"
+  ],
+  "description": "Zheng Ma's Résumé",
+  "main": "resume.html",
+  "keywords": [
+    "resume"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "font-awsome#^4.6.3"
+  }
+}

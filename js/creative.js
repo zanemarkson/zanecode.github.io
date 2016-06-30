@@ -23,14 +23,22 @@
     }
 
     // Make the large heading fonts responsive
-    for(var j = 0 ; j < document.querySelectorAll('h1').length; j++)
-    {
-        // document.querySelectorAll('h1')[j].fitText(1.2, {
-        //             minFontSize: '35px',
-        //             maxFontSize: '65px'
-        //         });
-        window.fitText( document.querySelectorAll('h1')[j], 1.2 );
-    }
+    // for(var j = 0 ; j < document.querySelectorAll('h1').length; j++)
+    // {
+    //     // document.querySelectorAll('h1')[j].fitText(1.2, {
+    //     //             minFontSize: '35px',
+    //     //             maxFontSize: '65px'
+    //     //         });
+    //     window.fitText( document.querySelectorAll('h1')[j], 1.2 );
+    // }
+
+    // Fit Text Plugin for Main Header
+    $("h1").fitText(
+        1.2, {
+            minFontSize: '35px',
+            maxFontSize: '65px'
+        }
+    );
 
 
     // Offset for Main Navigation

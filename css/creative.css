@@ -171,7 +171,7 @@ aside {
 header {
     position: relative;
     width: 100%;
-    min-height: auto;
+    /*min-height: auto;*/
     text-align: center;
     color: #fff;
     background-image: url(../img/myOffice.jpg);
@@ -194,6 +194,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
+
 }
 
 header .header-content .header-content-inner hr {
@@ -232,8 +233,21 @@ header .header-content .header-content-inner p {
         margin-left: auto;
         max-width: 80%;
         font-size: 19px;
+
     }
 }
+
+@media(min-width:500px) {
+    header {
+        min-height: 100%;
+    }
+
+    header .header-content .header-content-inner h1 {
+        font-size: 4vw;
+    }
+}
+
+
 
 .section-heading {
     margin-top: 0;
@@ -479,8 +493,8 @@ body {
     width: 14ch;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: type 2.6s steps(14, end), blink-caret .5s step-end 8 alternate;
-    animation: type 2.6s steps(14, end) , blink-caret .5s step-end 8 alternate;
+    -webkit-animation: type 2.8s steps(14, end), blink-caret .5s step-end 8 alternate;
+    animation: type 2.8s steps(14, end) , blink-caret .5s step-end 8 alternate;
 }
 
 .typing-1st {
@@ -489,8 +503,8 @@ body {
     width: 0;
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: type-1 4.4s steps(22, end) 4.5s, blink-caret .5s step-end 4s 12 alternate;
-    animation: type-1 4.4s steps(22, end) 4.5s, blink-caret .5s step-end 4s 12 alternate;
+    -webkit-animation: type-1 3.4s steps(17, end) 4.5s, blink-caret .5s step-end 4s 8 alternate;
+    animation: type-1 3.4s steps(17, end) 4.5s, blink-caret .5s step-end 4s 8 alternate;
     -webkit-animation-fill-mode: forwards;
     /* Chrome, Safari, Opera */
     animation-fill-mode: forwards;
@@ -510,7 +524,7 @@ body {
         width: 0;
     }
     to {
-        width: 22ch;
+        width: 17ch;
     }
 }
 @-webkit-keyframes type-1 {
@@ -518,7 +532,7 @@ body {
         width: 0;
     }
     to {
-        width: 22ch;
+        width: 17ch;
     }
 }
 
