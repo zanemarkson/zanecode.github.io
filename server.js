@@ -25,3 +25,12 @@ app.use(express.static(__dirname + '/'));
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });
+
+
+app.get('/academicCV', function(req, res){
+
+	res.sendFile('/academicCV.pdf');
+
+});
+
+
