@@ -29,7 +29,7 @@ app.listen(port, function() {
 
 app.get('/academicCV', function(req, res){
 
-	res.sendFile('/academicCV.pdf');
+	res.sendFile('academicCV.pdf');
 
 });
 
