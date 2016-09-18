@@ -27,6 +27,55 @@ app.listen(port, function() {
 });
 
 
+app.get('/resume_data', function(req, res){
+
+	var options = {
+	    root: __dirname, 
+	    dotfiles: 'deny',
+	    headers: {
+		'x-timestamp': Date.now(),
+	        'x-sent': true
+	    }
+  	};
+	// res.sendFile('/academicCV.pdf');
+
+	fileName = "ZhengMaResumeData.pdf";
+	res.sendFile(fileName, options, function (err) {
+		    if (err) {
+		      console.log(err);
+		      res.status(err.status).end();
+		    }
+		    else {
+		      console.log('Sent:', fileName);
+		    }
+	  });
+});
+
+app.get('/resume_software', function(req, res){
+
+	var options = {
+	    root: __dirname, 
+	    dotfiles: 'deny',
+	    headers: {
+		'x-timestamp': Date.now(),
+	        'x-sent': true
+	    }
+  	};
+	// res.sendFile('/academicCV.pdf');
+
+	fileName = "ZhengMaResumeSoftware.pdf";
+	res.sendFile(fileName, options, function (err) {
+		    if (err) {
+		      console.log(err);
+		      res.status(err.status).end();
+		    }
+		    else {
+		      console.log('Sent:', fileName);
+		    }
+	  });
+});
+
+
 app.get('/academicCV', function(req, res){
 
 	var options = {
@@ -50,5 +99,4 @@ app.get('/academicCV', function(req, res){
 		    }
 	  });
 });
-
 
